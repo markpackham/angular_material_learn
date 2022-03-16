@@ -3,6 +3,10 @@
   margin-left: 50px;
 }
 
+.navbar {
+  justify-content: space-between;
+}
+
 span {
-  margin: 3rem;
+  padding-right: 1rem;
 }
