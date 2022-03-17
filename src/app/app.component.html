@@ -5,4 +5,10 @@
   </mat-menu>
 
   <button mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
+
+  <mat-menu #submenu="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Vue</button>
+  </mat-menu>
 </div>
