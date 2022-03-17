@@ -11,7 +11,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule} from '@angular/material/expansion';
-const material = [MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
+import { MatCardModule } from '@angular/material/card';
+const material = [MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
 
 @NgModule({
   imports: [
