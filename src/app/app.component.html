@@ -13,12 +13,15 @@
   </mat-menu>
 
   <mat-menu #lazyMenu="matMenu">
-    <ng-template matMenuContent let-name="name">
+    <ng-template matMenuContent let-name="name" let-hobby="hobby">
       <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Hobby is {{hobby}}</button>
       <button mat-menu-item>Log out {{name}}</button>
     </ng-template>
   </mat-menu>
 
-  <button mat-raised-button [matMenuTriggerData]="{name : 'Timmy'}" [matMenuTriggerFor]="lazyMenu">Timmy</button>
-  <button mat-raised-button [matMenuTriggerData]="{name : 'Bob'}" [matMenuTriggerFor]="lazyMenu">Bob</button>
+  <button mat-raised-button [matMenuTriggerData]="{name : 'Timmy', hobby: 'd&d'}"
+    [matMenuTriggerFor]="lazyMenu">Timmy</button>
+  <button mat-raised-button [matMenuTriggerData]="{name : 'Bob', hobby: 'ultimate frizbee'}"
+    [matMenuTriggerFor]="lazyMenu">Bob</button>
 </div>
