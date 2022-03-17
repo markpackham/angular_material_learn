@@ -3,10 +3,16 @@
   margin-left: 50px;
 }
 
-.navbar {
-  justify-content: space-between;
+mat-sidenav-container {
+  height: 100%;
 }
 
-span {
-  padding-right: 1rem;
+mat-sidenav,
+mat-sidenav-content {
+  padding: 1rem;
+}
+
+mat-sidenav {
+  background: lightcoral;
+  width: 200px;
 }

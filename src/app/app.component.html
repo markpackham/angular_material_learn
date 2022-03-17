@@ -1,10 +1,8 @@
 <div class="layout">
-  <mat-toolbar color="primary" class="navbar">
-    <div>A Brand</div>
-    <div>
-      <span>Home</span>
-      <span>About</span>
-      <span>Contact</span>
-    </div>
-  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>Main Content
+      <button (click)="opened=!opened">Toggle Open</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>

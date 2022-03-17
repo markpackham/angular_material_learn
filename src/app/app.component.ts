@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'angular_material_learn';
   notifications = 0;
   showSpinner = false;
+  opened = false;
 
   loadData(){
     this.showSpinner = true;
