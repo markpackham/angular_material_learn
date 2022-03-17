@@ -1,27 +1,26 @@
 <div class="layout">
-  <mat-menu #appMenu="matMenu" xPosition="before" yPosition="below">
-    <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
-    <button mat-menu-item>BackEnd</button>
-  </mat-menu>
+  <mat-list>
+    <mat-list-item>
+      <mat-icon matListIcon>home</mat-icon>
+      <h3 matLine>Heading</h3>
+      <p matLine>Line</p>
+    </mat-list-item>
 
-  <button mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
+    <mat-list-item>
+      <mat-icon matListIcon>folder</mat-icon>
+      <h3 matLine>Heading 2</h3>
+      <p matLine>Line 2</p>
+    </mat-list-item>
+  </mat-list>
+  <!-- <mat-list dense>
+    <mat-list-item>Item 1</mat-list-item>
+    <mat-list-item>Item 2</mat-list-item>
+    <mat-list-item>Item 3</mat-list-item>
+  </mat-list>
 
-  <mat-menu #subMenu="matMenu">
-    <button mat-menu-item>Angular</button>
-    <button mat-menu-item>React</button>
-    <button mat-menu-item>Vue</button>
-  </mat-menu>
-
-  <mat-menu #lazyMenu="matMenu">
-    <ng-template matMenuContent let-name="name" let-hobby="hobby">
-      <button mat-menu-item>Settings</button>
-      <button mat-menu-item>Hobby is {{hobby}}</button>
-      <button mat-menu-item>Log out {{name}}</button>
-    </ng-template>
-  </mat-menu>
-
-  <button mat-raised-button [matMenuTriggerData]="{name : 'Timmy', hobby: 'd&d'}"
-    [matMenuTriggerFor]="lazyMenu">Timmy</button>
-  <button mat-raised-button [matMenuTriggerData]="{name : 'Bob', hobby: 'ultimate frizbee'}"
-    [matMenuTriggerFor]="lazyMenu">Bob</button>
+  <mat-nav-list>
+    <a mat-list-item href="#">Home</a>
+    <a mat-list-item href="#">About</a>
+    <a mat-list-item href="#">Contact</a>
+  </mat-nav-list> -->
 </div>
