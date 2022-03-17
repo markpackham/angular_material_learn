@@ -1,12 +1,12 @@
 <div class="layout">
-  <mat-menu #appMenu="matMenu">
-    <button mat-menu-item>FrontEnd</button>
+  <mat-menu #appMenu="matMenu" xPosition="before" yPosition="below">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
     <button mat-menu-item>BackEnd</button>
   </mat-menu>
 
   <button mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
 
-  <mat-menu #submenu="matMenu">
+  <mat-menu #subMenu="matMenu">
     <button mat-menu-item>Angular</button>
     <button mat-menu-item>React</button>
     <button mat-menu-item>Vue</button>
