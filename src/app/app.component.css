@@ -3,16 +3,6 @@
   margin-left: 50px;
 }
 
-mat-sidenav-container {
-  height: 100%;
-}
-
-mat-sidenav,
-mat-sidenav-content {
-  padding: 1rem;
-}
-
-mat-sidenav {
-  background: lightcoral;
-  width: 200px;
+mat-grid-tile {
+  background: lightblue;
 }

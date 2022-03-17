@@ -9,7 +9,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
-const material = [MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
+import { MatGridListModule } from '@angular/material/grid-list';
+const material = [MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
 
 @NgModule({
   imports: [
