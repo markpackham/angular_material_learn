@@ -1,12 +1,8 @@
 <div class="layout">
-  <mat-sidenav-container>
-    <mat-sidenav #sidenav mode="side" (opened)="log('Opened')" (closed)="log('Closed')" [(opened)]="opened">Sidenav
-    </mat-sidenav>
-    <mat-sidenav-content>Main Content
-      <button (click)="opened=!opened">Toggle Open</button>
-      <button (click)="sidenav.open()">Open</button>
-      <button (click)="sidenav.close()">Close</button>
-      <button (click)="sidenav.toggle()">Toggle</button>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item>FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+  </mat-menu>
+
+  <button mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
 </div>
