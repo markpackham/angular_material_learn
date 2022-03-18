@@ -1,12 +1,12 @@
 <div class="layout">
-  <mat-horizontal-stepper>
-    <mat-step label="Shipping Address">Shipping Address Details</mat-step>
-    <mat-step label="Billing Address">Billing Address Details
+  <mat-horizontal-stepper linear>
+    <mat-step label="Shipping Address" completed="false">Shipping Address Details</mat-step>
+    <mat-step label="Billing Address" completed="false">Billing Address Details
       <div>
         <button mat-button matStepperPrevious>Previous</button>
         <button mat-button matStepperNext>Next</button>
       </div>
     </mat-step>
-    <mat-step label="Order">Order Details</mat-step>
+    <mat-step label="Order" completed="false">Order Details</mat-step>
   </mat-horizontal-stepper>
 </div>
