@@ -1,12 +1,6 @@
 <div class="layout">
-  <mat-vertical-stepper linear>
-    <mat-step label="Shipping Address" completed="true">Shipping Address Details</mat-step>
-    <mat-step label="Billing Address" completed="false" optional>Billing Address Details
-      <div>
-        <button mat-button matStepperPrevious>Previous</button>
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </mat-step>
-    <mat-step label="Order" completed="false">Order Details</mat-step>
-  </mat-vertical-stepper>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput>
+  </mat-form-field>
 </div>
