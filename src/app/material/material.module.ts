@@ -16,7 +16,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
-const material = [MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
+import { MatSelectModule } from '@angular/material/select';
+const material = [MatSelectModule, MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
 
 @NgModule({
   imports: [
