@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  selectedValue: string | undefined;
+
+  options: string[] = ['Angular','React','Vue'];
 }

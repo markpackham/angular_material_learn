@@ -17,7 +17,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-const material = [MatSelectModule, MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+const material = [MatAutocompleteModule, MatSelectModule, MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
 
 @NgModule({
   imports: [
