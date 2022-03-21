@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   options: string[] = ['Angular','React','Vue'];
+  objectOptions = [
+    {name: 'Angular'},
+    {name: 'Angular Material'},
+    {name: 'React'},
+    {name: 'Vue'}
+  ];
+
+  displayFunction(subject: { name: any; }){
+    return subject ? subject.name : undefined
+  }
 }
