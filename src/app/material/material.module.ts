@@ -18,7 +18,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
-const material = [MatAutocompleteModule, MatSelectModule, MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
+const material = [MatRadioModule, MatCheckboxModule, MatAutocompleteModule, MatSelectModule, MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
 
 @NgModule({
   imports: [
