@@ -24,7 +24,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-const material = [MatSnackBarModule, MatTooltipModule, MatNativeDateModule, MatDatepickerModule, MatRadioModule, MatCheckboxModule, MatAutocompleteModule, MatSelectModule, MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
+import {MatDialogModule} from '@angular/material/dialog';
+const material = [MatDialogModule, MatSnackBarModule, MatTooltipModule, MatNativeDateModule, MatDatepickerModule, MatRadioModule, MatCheckboxModule, MatAutocompleteModule, MatSelectModule, MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
 
 @NgModule({
   imports: [

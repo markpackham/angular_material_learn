@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
@@ -7,19 +7,13 @@ import {MatSnackBar} from '@angular/material/snack-bar';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private snackBar: MatSnackBar){
+
+  constructor(public dialog: MatDialog){
 
   }
 
-  openSnackBar(message: any, action: any){
-    let snackBarRef = this.snackBar.open(message, action, {duration: 3000});
-
-    snackBarRef.afterDismissed().subscribe(()=>{
-      console.log('The snackbar was dismissed');
-    });
-
-    snackBarRef.onAction().subscribe(()=>{
-      console.log('The snackbar action was triggered')
-    })
+  openDialog(){
+this.dialog.open();
   }
+ 
 }
