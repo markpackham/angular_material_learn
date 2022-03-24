@@ -12,7 +12,7 @@ export class AppComponent {
   }
 
   openSnackBar(message: any, action: any){
-    let snackBarRef = this.snackBar.open(message, action);
+    let snackBarRef = this.snackBar.open(message, action, {duration: 3000});
 
     snackBarRef.afterDismissed().subscribe(()=>{
       console.log('The snackbar was dismissed');
