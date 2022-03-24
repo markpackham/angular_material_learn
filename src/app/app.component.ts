@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ export class AppComponent {
   }
 
   openDialog(){
-this.dialog.open();
+    this.dialog.open(DialogExampleComponent);
   }
  
 }

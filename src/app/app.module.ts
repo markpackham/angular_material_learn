@@ -13,6 +13,7 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
     AppComponent,
     DialogExampleComponent
   ],
+  entryComponents: [DialogExampleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
