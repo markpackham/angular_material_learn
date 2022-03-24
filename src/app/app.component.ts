@@ -11,7 +11,7 @@ export class AppComponent {
 
   }
 
-  openSnackBar(message: any){
-    this.snackBar.open(message);
+  openSnackBar(message: any, action: any){
+    this.snackBar.open(message, action);
   }
 }
