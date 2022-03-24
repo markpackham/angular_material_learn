@@ -14,7 +14,10 @@ export class AppComponent {
   }
 
   openDialog(){
-    this.dialog.open(DialogExampleComponent);
+    let dialogRef = this.dialog.open(DialogExampleComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    })
   }
  
 }
