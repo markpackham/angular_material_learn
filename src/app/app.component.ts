@@ -34,7 +34,9 @@ export class AppComponent {
     console.log(row);
   }
 
+  // filterValue: string
+
   applyFilter(filterValue: string){
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+    this.dataSource.filter = filterValue.trim();
   }
 }
