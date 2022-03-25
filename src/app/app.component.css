@@ -6,6 +6,12 @@
 
 .number {
   height: 100px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px;
+  background-color: red;
 }
 
 .scroll {
