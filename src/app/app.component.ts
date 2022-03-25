@@ -34,12 +34,12 @@ export class AppComponent implements OnInit {
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   @ViewChild(MatSort ) sort = new MatSort;
-  @ViewChild(MatPaginator)
+  @ViewChild(MatPaginator, { static: true })
   paginator!: MatPaginator;
 
 
   ngOnInit(): void {
-    this.dataSource.sort = this.sort;
+    // this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
   }
 
