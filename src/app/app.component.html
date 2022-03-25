@@ -1,4 +1,8 @@
 <div class="layout">
+  <mat-form-field>
+    <input (keyup)="applyFilter($event.target.value)" matInput placeholder="Filter">
+  </mat-form-field>
+
   <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <!-- Position Column -->
     <ng-container matColumnDef="position">
@@ -25,6 +29,6 @@
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row (click)="logData(row)" *matRowDef="let row; columns: displayedColumnsData;"></mat-row>
+    <mat-row (click)="logData(row)" *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
 </div>
