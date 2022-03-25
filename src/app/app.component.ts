@@ -28,15 +28,15 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
 
   displayedColumns: string[] = ['position', 'name', 'symbol', 'weight'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
-  @ViewChild(MatSort) sort: MatSort | undefined;
+  @ViewChild(MatSort ) sort =new MatSort;
+
+  ngOnInit(): void {
+    this.dataSource.sort = this.sort;
+  }
 
   logData(row: any){
     console.log(row);
