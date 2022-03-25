@@ -37,8 +37,7 @@ export class AppComponent {
   // filterValue: string
 
   applyFilter(filterValue: any) {
-    console.log(filterValue.target.value);
-    if(filterValue.length > 0){
+    if(filterValue.target.value.length > 0){
       this.dataSource.filter = filterValue.target.value.trim().toLowerCase();
     }
   }
