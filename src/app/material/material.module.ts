@@ -26,8 +26,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
-const material = [MatTableModule, MatDialogModule, MatSnackBarModule, MatTooltipModule, MatNativeDateModule, MatDatepickerModule, MatRadioModule, MatCheckboxModule, MatAutocompleteModule, MatSelectModule, MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
+const material = [MatPaginatorModule, MatTableModule, MatDialogModule, MatSnackBarModule, MatTooltipModule, MatNativeDateModule, MatDatepickerModule, MatRadioModule, MatCheckboxModule, MatAutocompleteModule, MatSelectModule, MatInputModule, MatFormFieldModule, MatStepperModule, MatTabsModule, MatCardModule, MatExpansionModule, MatGridListModule, MatDividerModule, MatListModule, MatMenuModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatBadgeModule, MatProgressSpinnerModule, MatToolbarModule, MatSidenavModule]
 
 @NgModule({
   imports: [
