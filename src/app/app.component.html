@@ -33,4 +33,8 @@
   </mat-table>
 
   <mat-paginator [pageSize]="3" [pageSizeOptions]="[3,10,20]" showFirstLastButtons></mat-paginator>
+
+  <div *ngFor="let number of numbers">
+    {{number}}
+  </div>
 </div>

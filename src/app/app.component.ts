@@ -33,6 +33,14 @@ export class AppComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'symbol', 'weight'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
+  numbers : number[] = [];
+
+  constructor(){
+    for(let num=0; num < 1000; num++){
+      this.numbers.push(num);
+    }
+  }
+
   @ViewChild(MatSort ) sort = new MatSort;
   @ViewChild(MatPaginator, { static: true })
   paginator!: MatPaginator;
