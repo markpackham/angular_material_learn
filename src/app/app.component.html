@@ -37,7 +37,7 @@
   <!-- Virtual scrolling demo -->
 
   <cdk-virtual-scroll-viewport itemSize="100" class="scroll">
-    <div *ngFor="let number of numbers" class="number">
+    <div *cdkVirtualFor="let number of numbers" class="number">
       {{number}}
     </div>
   </cdk-virtual-scroll-viewport>
