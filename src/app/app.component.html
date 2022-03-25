@@ -1,6 +1,6 @@
 <div class="layout">
   <mat-form-field>
-    <input (keyup)="applyFilter($event.target.value)" matInput placeholder="Filter" placeholder="Hydrogen">
+    <input (keyup)="applyFilter($event)" matInput placeholder="Filter">
   </mat-form-field>
 
   <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
