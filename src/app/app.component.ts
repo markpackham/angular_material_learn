@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { MatTableDataSource} from '@angular/material/table';
+import { MatSort } from '@angular/material/sort';
 
 export interface PeriodicElement {
   name: string;
@@ -26,15 +27,20 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+
   displayedColumns: string[] = ['position', 'name', 'symbol', 'weight'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
+
+  @ViewChild(MatSort) sort: MatSort | undefined;
 
   logData(row: any){
     console.log(row);
   }
-
-  // filterValue: string
 
   applyFilter(filterValue: any) {
     if(filterValue.target.value.length > 0){
